@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS & JavaScript Interactive Experience</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Interactive Web Experience</h1>
+        <p>Combining CSS3 animations with JavaScript functions</p>
+    </header>
+
+    <main>
+        <!-- Part 1: CSS3 Animations -->
+        <section id="css-animations">
+            <h2>CSS3 Transitions & Animations</h2>
+            
+            <div class="animation-examples">
+                <div class="example">
+                    <h3>Button Hover Effects</h3>
+                    <button class="btn-hover">Hover Me</button>
+                </div>
+                
+                <div class="example">
+                    <h3>Continuous Animation</h3>
+                    <div class="spinner"></div>
+                </div>
+                
+                <div class="example">
+                    <h3>Transform on Hover</h3>
+                    <div class="card">
+                        <p>Hover over me</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Part 2: JavaScript Functions -->
+        <section id="js-functions">
+            <h2>JavaScript Functions</h2>
+            
+            <div class="function-examples">
+                <div class="example">
+                    <h3>Calculate Area</h3>
+                    <p>Enter width and height to calculate area:</p>
+                    <input type="number" id="width" placeholder="Width">
+                    <input type="number" id="height" placeholder="Height">
+                    <button onclick="calculateArea()">Calculate</button>
+                    <p id="area-result"></p>
+                </div>
+                
+                <div class="example">
+                    <h3>String Manipulation</h3>
+                    <p>Enter text to transform:</p>
+                    <input type="text" id="text-input" placeholder="Enter text">
+                    <button onclick="transformText('upper')">Uppercase</button>
+                    <button onclick="transformText('lower')">Lowercase</button>
+                    <button onclick="transformText('reverse')">Reverse</button>
+                    <p id="text-result"></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Part 3: Combined CSS & JavaScript -->
+        <section id="combined">
+            <h2>Combined CSS Animations & JavaScript</h2>
+            
+            <div class="combined-examples">
+                <div class="example">
+                    <h3>Animated Box</h3>
+                    <p>Click the button to animate the box:</p>
+                    <button onclick="animateBox()">Animate Box</button>
+                    <button onclick="resetBox()">Reset Box</button>
+                    <div id="animated-box"></div>
+                </div>
+                
+                <div class="example">
+                    <h3>Card Flip</h3>
+                    <p>Click the card to flip it:</p>
+                    <div class="card-container" onclick="flipCard()">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <p>Front</p>
+                            </div>
+                            <div class="card-back">
+                                <p>Back</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="example">
+                    <h3>Popup Modal</h3>
+                    <button onclick="openModal()">Open Modal</button>
+                    <div id="modal" class="modal">
+                        <div class="modal-content">
+                            <span class="close" onclick="closeModal()">&times;</span>
+                            <p>This is a popup modal with animation!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Interactive Web Experience Assignment</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
